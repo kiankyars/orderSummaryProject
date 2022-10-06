@@ -10,6 +10,7 @@ body {
     background-image: url(./images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: var(--pale-blue);
 }
 
 .attribution {
@@ -23,5 +24,5 @@ body {
 
 .card {
     width: 450px;
-    background-color: var(--pale-blue);
+    background-color: white;
 }
