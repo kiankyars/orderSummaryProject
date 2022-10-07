@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Red+Hat+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
 :root {
     --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
@@ -13,16 +23,101 @@ body {
     background-color: var(--pale-blue);
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
+.order-description {
+    padding: 0 40px;
+    /* spaces between lines */
+    line-height: 25px;
 }
 
 .card {
+    overflow: hidden;
     width: 450px;
+    color: var(--desaturated-blue);
     background-color: white;
+    text-align: center;
+    margin: 3rem auto 1rem auto;
+    border-radius: 25px;
+}
+
+.image {
+    width: 100%;
+}
+
+.container {
+    padding: 30px;
+}
+
+/* means that all of the children of this container will have the following traits */
+.container > * {
+    /* ephemeral unit of 1 realtive to it's parent (the same font as it's parent) */
+    margin: 1em 0;
+}
+
+p {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 1rem 0;
+}
+
+.proceed-button {
+    background-color: var(--bright-blue);
+    color: white;
+    box-shadow: 0px 1px 20px 5px lightgrey;
+    padding: 1rem 0;
+}
+
+.proceed-button:hover {
+    opacity: 0.8;
+}
+
+.cancel-button {
+    color: var(--desaturated-blue );
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.cancel-button:hover {
+    color: black;
+}
+
+.plan-container {
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* somehow makes the music icon not be stretched out */
+    align-items: center;
+}
+
+.plan-description {
+    margin-right: 75px;
+    line-height: 20px;
+}
+
+.plan-container a:hover {
+    text-decoration: none;
+    color: var(--bright-blue-hover);
+}
+
+.plan-description strong {
+    color: black;
+}
+
+h2 {
+    color: var(--dark-blue);
+    font-size: 2rem;
+    font-weight: 700;
 }
